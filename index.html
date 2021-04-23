@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
     </script>
+    <script src="script.js"></script>
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 
@@ -17,9 +21,35 @@
 </head>
 
 <body>
-    <div class="container">
-        <h>Pizza hut</h>
+    <h><strong>Pizza Hut</strong></h>
+    <div class="container col-3">
+        <form action="">
+            <select name="" id="size" class="form-control mb-3">
+                <option id="size" value="Enter you pizza size" class="form-control">Enter you pizza size</option>
+                <option id="size" value="large">large</option>
+                <option id="size" value="medium">medium</option>
+                <option id="size" value="small">small</option>
+            </select>
+            <select name="" id="topping" class="form-control mb-3">
+                <option value="toppings">toppings</option>
+                <option value="beef">beef</option>
+                <option value="BBQ-chicken">BBQ-chicken</option>
+                <option value="bacon">bacon</option>
+                <option value="ham">ham</option>
+                <option value="blue-cheese">blue-cheese</option>
+                <option value="tomatoes">tomatoes</option>
+                <option value="manchengo">manchengo</option>
+                <option value="parmessan">parmessan</option>
+                <option value="carrots">carrots</option>
+                <option value="brie">brie</option>
+                <option value="olives">olives</option>
+                <option value="peas">peas</option>
+            </select>
+
+      </form> 
+
     </div>
+
 </body>
 
 </html>
