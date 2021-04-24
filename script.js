@@ -1,9 +1,12 @@
 //create an object
-function pizza(size ,topping,crust) {
+function pizza(size ,topping,crust ,quantity , ttl) {
     this.size = size;
     this.topping = topping;
     this.crust = crust;
+    this.quantity=quantity;
+    this.ttl =ttl;
 };
+finalTotal=0;
 
 //business logic
 $(document).ready(function(){
@@ -15,7 +18,7 @@ $(document).ready(function(){
      var crust = $("#types").val();
       var number =parseInt($("#number").val());
      
-     var newPizza = new pizza(pSize ,topping ,crust);
+     
      total = 0;
      if (pSize=="small"){
        total+=500;
@@ -64,9 +67,9 @@ $(document).ready(function(){
          alert("chose a crust!")
      }
      total = total*number;
-     
-     $("#total").prepend("<tr><td>"+newPizza.pSize+"</td><td>"+newPizza.crust+"</td><td>"+newPizza.topping+"</td><td></td></tr>")
-     
-     
+     var newPizza = new pizza(pSize ,topping ,crust ,number,total);
+     finalTotal+=total
+     $("#total").prepend("<tr><td>"+newPizza.size+"</td><td>"+newPizza.crust+"</td><td>"+newPizza.topping+"</td><td>"+newPizza.quantity+"</td><td>"+newPizza.ttl+"</td></tr>")
+    $(".ttlCheck").text(finalTotal);
 });
 });
