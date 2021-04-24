@@ -30,7 +30,38 @@ $(document).ready(function(){
      else if(pSize=="elarge"){
          total+=2000;
      }
+     else {
+         alert("Please select the dropdown!")
+     }
 
+     
+     if(topping=="beef"){
+         total+=300;  
+     } 
+     else if(topping=="BBQ-chicken"){
+        total+=400;
+     }
+     else if(topping=="bacon"){
+         total+=200;
+     }
+     else if(topping=="ham"){
+         total+=150;
+     }
+     else if(topping=="blue-cheese"){
+         total+=400;
+     }
+     else if (topping=="others"){
+         total+=300;
+     }
+     else{
+         alert("Please add topping!")
+     }
 
+     if(crust=="crusty"||crust=="flatbread"||crust=="cheese"||crust=="thincrust"||crust=="Sicilian"||crust=="gluten free"){
+         total+=150;
+     }
+     else {
+         alert("chose a crust!")
+     }
 });
 });
