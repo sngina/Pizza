@@ -13,7 +13,7 @@ $(document).ready(function(){
      var pSize = $("#size").val();
      var topping =$("#topping").val();
      var crust = $("#types").val();
-
+      var number =parseInt($("#number").val());
      
      var newPizza = new pizza(pSize ,topping ,crust);
      total = 0;
@@ -63,5 +63,10 @@ $(document).ready(function(){
      else {
          alert("chose a crust!")
      }
+     total = total*number;
+     console.log(total);
+
+     
+     
 });
 });
