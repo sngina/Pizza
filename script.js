@@ -1,17 +1,36 @@
-//business logic
-function size(extra , large , medium , small) {
-    this.elarge = elarge;
-    this.large = large;
-    this.medium = medium;
-    this.small = small
+//create an object
+function pizza(size ,topping,crust) {
+    this.size = size;
+    this.topping = topping;
+    this.crust = crust;
 };
 
-//delivery option getting a prompt to add your address.
+//business logic
 $(document).ready(function(){
-    $("#deliver").click(function(event){
-    event.preventDefault();
-    
-    });
-    prompt("Please add your address")
-    alert("Thank you!Oder received!")
+ $("form").submit(function(event){ 
+     event.preventDefault();
+      
+     var pSize = $("#size").val();
+     var topping =$("#topping").val();
+     var crust = $("#types").val();
+
+     
+     var newPizza = new pizza(pSize ,topping ,crust);
+     total = 0;
+     if (pSize=="small"){
+       total+=500;
+       
+     } 
+     else if(pSize=="medium"){
+         total+=800;
+     }
+     else if(pSize=="large"){
+         total+=1500;
+     }
+     else if(pSize=="elarge"){
+         total+=2000;
+     }
+
+
+});
 });
