@@ -64,8 +64,8 @@ $(document).ready(function(){
          alert("chose a crust!")
      }
      total = total*number;
-     console.log(total);
-
+     
+     $("#total").prepend("<tr><td>"+newPizza.pSize+"</td><td>"+newPizza.crust+"</td><td>"+newPizza.topping+"</td><td></td></tr>")
      
      
 });
