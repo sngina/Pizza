@@ -11,8 +11,13 @@ body{
 
 .pizza{
     background-color: white;
-    opacity:unset;
+    opacity:24px;
    border-radius: 5px;
    padding: 20px;
    margin-bottom: 40px;
+}
+#price{
+    color:black;
+    font-size: 24px;
+
 }
