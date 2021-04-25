@@ -55,10 +55,15 @@ $(document).ready(function () {
         } else {
             alert("chose a crust!")
         }
+        
         total = total * number;
         var newPizza = new pizza(pSize, topping, crust, number, total);
         finalTotal += total
         $("#total").prepend("<tr><td>" + newPizza.size + "</td><td>" + newPizza.crust + "</td><td>" + newPizza.topping + "</td><td>" + newPizza.quantity + "</td><td>" + newPizza.ttl + "</td></tr>")
         $(".ttlCheck").text(finalTotal);
+       //delivery
+       $(".deliver").click(function(){
+        prompt("Add your location please"); 
+     })
     });
 });
