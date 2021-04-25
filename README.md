@@ -31,3 +31,5 @@ The languages used are HTML , CSS  and JS .
 ## Support and contact details
 In case of any issues or bugs you can contact me through my email address sngina707@gmail.com.
 ### License
+This is under the [MIT](LICENSE) license
+Copyright (c) 2021 **Stella Ngina** 
